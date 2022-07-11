@@ -16,16 +16,20 @@ const createElement = function(itemArr, childrenArr) {
     }
 
     if (childrenArr != undefined) {
-        childrenArr.forEach(child => {
-            item.appendChild(child);
-        })
+        appendChildren(childrenArr, item);
     };
-
-    console.log(item)
 
     return item;
 };
 
+const appendChildren = function(arr, item) {
+    arr.forEach(child => {
+        item.appendChild(child);
+    })
+}
+
 export {
-    createElement
+    createElement,
+    appendChildren
+
 };
