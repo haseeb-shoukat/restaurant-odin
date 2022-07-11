@@ -15,8 +15,8 @@ appendChildren([createElement(["div", "about-heading", "Our Story"]),
 createElement(["p", "about-text", text1]),
 createElement(["p", "about-text", text2]),
 image,
-createElement(["p", "about-text", text3]),
-createElement(["img", "about-img"])], document.querySelector(".main-container"))
+createElement(["p", "about-text", text3])], 
+document.querySelector(".main-container"))
 
 }
 

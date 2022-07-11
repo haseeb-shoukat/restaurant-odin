@@ -28,8 +28,27 @@ const appendChildren = function(arr, item) {
     })
 }
 
+const createItems = function(itemsArr) {
+    let newItems = [];
+
+    itemsArr.forEach(item => {
+        let menuItem = createElement(["div", "menu-item"]);
+        let heading = item[0];
+        let text = item[1];
+
+        menuItem.append(
+        createElement(["div", "item-heading", heading]),
+        createElement(["div", "item-text", text]))
+
+        newItems.push(menuItem);
+    })
+
+    return newItems;
+}
+
 export {
     createElement,
-    appendChildren
+    appendChildren,
+    createItems
 
 };

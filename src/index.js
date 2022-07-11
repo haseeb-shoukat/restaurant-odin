@@ -1,5 +1,7 @@
 import { createElement, appendChildren } from './createElement.js';
 import { createAbout } from './createAbout.js';
+import { createMenu } from './createMenu.js';
+import { createContact } from './createContact.js';
 
 const content = document.querySelector("#content");
 
@@ -41,6 +43,12 @@ navItems.forEach(item => {
 
         if (item.textContent === "About") {
             createAbout();
+        }
+        else if (item.textContent === "Menu") {
+            createMenu();
+        }
+        else {
+            createContact();
         }
     });
 });
