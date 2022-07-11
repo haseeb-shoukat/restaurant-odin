@@ -112,7 +112,7 @@ a {
     font-size: 25px;
 }
 
-.about-img, .menu-img {
+.about-img, .menu-img, .contact-img {
     width: 80%;
     max-height: 400px;
     border-radius: 5px;
@@ -147,4 +147,7 @@ a {
     font-size: 20px;
 }
 
-
+.contact-img {
+    width: auto;
+    height: auto;
+}
